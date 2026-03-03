@@ -1,0 +1,9 @@
+wfdb
+pandas
+numpy
+matplotlib
+scikit-learn
+torch
+torchaudio
+torchvision
+joblib

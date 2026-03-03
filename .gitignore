@@ -1,0 +1,5 @@
+# Ignorera stora datafiler och virtuella miljöer
+raw_data/
+venv/
+__pycache__/
+.ipynb_checkpoints/
