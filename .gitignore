@@ -1,2 +1,2 @@
 # Ignorera stora datafiler och virtuella miljöer
-raw_data/
+raw_data/*.tsv
