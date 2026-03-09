@@ -1,6 +1,4 @@
 import numpy as np
-import pandas as pd
-
 
 def create_windows(df, window_size=12, horizon_steps=4, stride=1):
     df = df.sort_values(["id", "timestep"]).copy()
@@ -11,6 +9,7 @@ def create_windows(df, window_size=12, horizon_steps=4, stride=1):
     y = []
 
     for patient_id, patient_df in df.groupby("id"):
+
         patient_df = patient_df.sort_values("timestep").reset_index(drop=True)
 
         features = patient_df[feature_columns].values
@@ -19,6 +18,7 @@ def create_windows(df, window_size=12, horizon_steps=4, stride=1):
         max_start = len(patient_df) - window_size - horizon_steps + 1
 
         for start in range(0, max_start, stride):
+
             end = start + window_size
             target_index = end + horizon_steps - 1
 
