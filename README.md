@@ -23,7 +23,7 @@ Sepsis is a life-threatening condition that requires early detection. In this pr
 - Scikit-learn
 
 ## Results
-The project demonstrates how machine learning techniques can be applied to time-series healthcare data for predictive analysis.
+The model was trained on time-series patient data to predict the onset of sepsis. The results show that machine learning methods can capture patterns in temporal medical data and provide useful predictions. Further improvements can be achieved with more data and model tuning.
 
 ## About
 This project was developed as part of coursework in Data Engineering at KTH Royal Institute of Technology. It reflects practical experience in machine learning, data analysis, and working with real-world datasets.
